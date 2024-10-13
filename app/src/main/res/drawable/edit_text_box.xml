@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- This layer sets the main background of the EditText box to white -->
+    <item>
+        <shape>
+            <solid android:color="#FFFFFF"/> <!-- Background color matches the screen background -->
+            <corners android:radius="6dp"/>
+        </shape>
+    </item>
+
+    <!-- This layer sets an underline at the bottom of the box -->
+    <item android:bottom="0.5dp">
+        <shape>
+            <solid android:color="#F0F0F0"/> <!-- Light gray underline -->
+            <size android:height="1dp"/>
+        </shape>
+    </item>
+
+</layer-list>

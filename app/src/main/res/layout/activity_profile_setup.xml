@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Personal Information -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal Information"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000" /> <!-- Dark black for label text -->
+
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:background="@drawable/edit_text_box"
+            android:textColor="#4F4F4F"
+            android:textColorHint="#808080"
+            android:textSize="14sp"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email (optional)"
+            android:background="@drawable/edit_text_box"
+            android:textColor="#4F4F4F"
+            android:textColorHint="#808080"
+            android:textSize="14sp"
+            android:padding="12dp"
+            android:layout_marginTop="8dp" />
+
+        <!-- Add some space between labels -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Location Details"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000" /> <!-- Dark black for label text -->
+
+        <!-- Map View for Google Map -->
+        <FrameLayout
+            android:id="@+id/mapContainer"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="8dp"
+            android:background="#E0E0E0">
+            <!-- MapView will be added here dynamically or in a fragment -->
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/houseInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="House, Apt, floor"
+            android:background="@drawable/edit_text_box"
+            android:textColor="#4F4F4F"
+            android:textColorHint="#808080"
+            android:textSize="14sp"
+            android:padding="12dp"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/blockInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Block/Area"
+            android:background="@drawable/edit_text_box"
+            android:textColor="#4F4F4F"
+            android:textColorHint="#808080"
+            android:textSize="14sp"
+            android:padding="12dp"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/streetInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Street (optional)"
+            android:background="@drawable/edit_text_box"
+            android:textColor="#4F4F4F"
+            android:textColorHint="#808080"
+            android:textSize="14sp"
+            android:padding="12dp"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/nearbyPlaceInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nearby place (optional)"
+            android:background="@drawable/edit_text_box"
+            android:textColor="#4F4F4F"
+            android:textColorHint="#808080"
+            android:textSize="14sp"
+            android:padding="12dp"
+            android:layout_marginTop="8dp" />
+
+        <!-- Add some space between labels -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Location Label"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000" /> <!-- Dark black for label text -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/homeButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Home"
+                android:backgroundTint="#FFA500" />
+
+            <Button
+                android:id="@+id/officeButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Office"
+                android:backgroundTint="#FFA500" />
+
+            <Button
+                android:id="@+id/otherButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Other"
+                android:backgroundTint="#FFA500" />
+        </LinearLayout>
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save information"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#FFA500"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>
