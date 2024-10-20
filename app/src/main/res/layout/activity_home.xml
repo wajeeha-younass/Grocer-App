@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Toolbar with Search and Cart Icons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+
+        <ImageButton
+            android:id="@+id/menu_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Menu Icon" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="What are you looking for?"
+            android:background="@drawable/rounded_edittext"
+            android:padding="8dp" />
+
+        <ImageButton
+            android:id="@+id/cart_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cart"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Cart Icon" />
+    </LinearLayout>
+
+    <!-- Delivery Location -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deliver to Home"
+        android:drawableStart="@drawable/location"
+        android:drawablePadding="8dp"
+        android:padding="8dp" />
+
+    <!-- RecyclerView for Categories -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/categoryRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:scrollbars="vertical"/>
+</LinearLayout>
+
+
+
+
+    <!--    &lt;!&ndash; ViewPager for Banner &ndash;&gt;-->
+<!--    <androidx.viewpager2.widget.ViewPager2-->
+<!--        android:id="@+id/bannerViewPager"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:layout_marginTop="8dp" />-->
+
+<!--    &lt;!&ndash; Trending Products Section &ndash;&gt;-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:padding="8dp"-->
+<!--        android:gravity="end">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Trending Products"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="16sp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/view_all"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="View all"-->
+<!--            android:textColor="@color/colorPrimary" />-->
+<!--    </LinearLayout>-->
+
+<!--    &lt;!&ndash; RecyclerView for Products &ndash;&gt;-->
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/productsRecyclerView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="8dp" />-->
+
+<!--</LinearLayout>-->
