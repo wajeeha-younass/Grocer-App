@@ -1,37 +1,95 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:padding="8dp">
+    android:orientation="vertical"
+    android:background="@drawable/category_box_background"
+    android:padding="16dp"
+    android:layout_margin="8dp"
+    android:elevation="4dp">
 
-    <ImageView
-        android:id="@+id/categoryImage"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:src="@drawable/gro"
-        android:contentDescription="@string/category_image_desc" />
+<!-- Category Title and Image -->
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:gravity="center_vertical"
+android:paddingBottom="8dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+<ImageView
+    android:id="@+id/categoryImage"
+    android:layout_width="50dp"
+android:layout_height="50dp"
+android:src="@drawable/machine"
+android:contentDescription="Category Image"
+android:layout_marginEnd="16dp" />
+
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/categoryTitle"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginStart="16dp">
+        android:text="Category Title"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#333333" />
 
-        <TextView
-            android:id="@+id/categoryTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Category Title"
-            android:textStyle="bold"
-            android:textSize="16sp" />
-
-        <TextView
-            android:id="@+id/categoryDescription"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Category Description"
-            android:textSize="14sp" />
-    </LinearLayout>
+    <TextView
+        android:id="@+id/categoryDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category Description"
+        android:textColor="#666666" />
 </LinearLayout>
+
+<!-- Expand/Collapse Button -->
+<ImageButton
+    android:id="@+id/expandButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/arrow"
+    android:background="?attr/selectableItemBackgroundBorderless"
+    android:contentDescription="Expand Button" />
+</LinearLayout>
+
+    <!-- Expandable Layout for Products -->
+<LinearLayout
+android:id="@+id/expandableLayout"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:visibility="gone"
+android:padding="8dp"
+android:background="@drawable/box_background">  <!-- Box effect for expanded content -->
+
+<!-- Product List -->
+<TextView
+    android:id="@+id/product1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Product 1"
+    android:padding="8dp"
+    android:textColor="#333333" />
+
+<TextView
+    android:id="@+id/product2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Product 2"
+    android:padding="8dp"
+    android:textColor="#333333" />
+
+<TextView
+    android:id="@+id/product3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Product 3"
+    android:padding="8dp"
+    android:textColor="#333333" />
+</LinearLayout>
+
+    </LinearLayout>

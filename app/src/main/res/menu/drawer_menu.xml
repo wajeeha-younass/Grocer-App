@@ -1,0 +1,61 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_categories"
+        android:title="Categories"
+        android:icon="@drawable/categ" />
+
+    <item
+        android:id="@+id/nav_cart"
+        android:title="My Cart"
+        android:icon="@drawable/shop" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:title="My Profile"
+        android:icon="@drawable/user" />
+
+    <item
+        android:id="@+id/nav_orders"
+        android:title="My Orders"
+        android:icon="@drawable/order" />
+
+    <item
+        android:id="@+id/nav_wallet"
+        android:title="Wallet"
+        android:icon="@drawable/wallet" />
+
+    <item
+        android:id="@+id/nav_promo_alerts"
+        android:title="Promo Alerts"
+        android:icon="@drawable/bell" />
+
+    <item
+        android:id="@+id/nav_saved_locations"
+        android:title="Saved Locations"
+        android:icon="@drawable/locationn" />
+
+    <item
+        android:id="@+id/nav_share"
+        android:title="Share"
+        android:icon="@drawable/share" />
+
+    <item
+        android:id="@+id/nav_faqs"
+        android:title="FAQs"
+        android:icon="@drawable/information" />
+
+    <item
+        android:id="@+id/nav_help_center"
+        android:title="Help Center"
+        android:icon="@drawable/help" />
+    <item
+        android:id="@+id/nav_wish_list"
+        android:title="Wish List"
+        android:icon="@drawable/heart" />
+
+    <item
+        android:id="@+id/nav_sign_out"
+        android:title="Sign out"
+        android:icon="@drawable/out" />
+</menu>

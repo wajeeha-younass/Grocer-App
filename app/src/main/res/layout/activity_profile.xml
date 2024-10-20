@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- App Bar with Back Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow"
+            android:padding="8dp"
+            android:contentDescription="Back Button" />
+
+        <TextView
+            android:id="@+id/profileTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="My Profile"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/editProfileButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EDIT"
+            android:textColor="@android:color/holo_orange_light"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <!-- User Profile Fields -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="16sp"
+        android:paddingBottom="4dp" />
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name"
+        android:text="jia"
+        android:textSize="14sp"
+        android:padding="12dp"
+        android:paddingBottom="8dp"
+        android:background="@drawable/edittext_background" /> <!-- Custom Background -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email (optional)"
+        android:textSize="16sp"
+        android:paddingBottom="4dp" />
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your email"
+        android:text="wajeehayounas755@gmail.com"
+        android:textSize="14sp"
+        android:padding="12dp"
+        android:paddingBottom="8dp"
+        android:background="@drawable/edittext_background" /> <!-- Custom Background -->
+
+    <Button
+        android:id="@+id/resendConfirmationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESEND CONFIRMATION EMAIL"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:textColor="@android:color/white"
+        android:textSize="11sp"
+        android:padding="1dp"
+        android:layout_gravity="end"
+        android:drawablePadding="2dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile Number"
+        android:textSize="16sp"
+        android:paddingBottom="4dp" />
+    <EditText
+        android:id="@+id/phoneEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your mobile number"
+        android:text="+92 3224675760"
+        android:textSize="14sp"
+        android:padding="12dp"
+        android:paddingBottom="8dp"
+        android:background="@drawable/edittext_background" /> <!-- Custom Background -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date of Birth"
+        android:textSize="16sp"
+        android:paddingBottom="4dp" />
+    <EditText
+        android:id="@+id/dobEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your date of birth"
+        android:text=""
+        android:textSize="14sp"
+        android:padding="12dp"
+        android:paddingBottom="8dp"
+        android:background="@drawable/edittext_background" /> <!-- Custom Background -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:textSize="16sp"
+        android:paddingBottom="4dp" />
+    <EditText
+        android:id="@+id/genderEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your gender"
+        android:text=""
+        android:textSize="14sp"
+        android:padding="12dp"
+        android:paddingBottom="8dp"
+        android:background="@drawable/edittext_background" /> <!-- Custom Background -->
+
+    <!-- Delete My Account TextView -->
+    <TextView
+        android:id="@+id/deleteAccountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/trash"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:text="Delete my account"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="16sp" />
+
+</LinearLayout>

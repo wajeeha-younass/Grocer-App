@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/nav_categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/categ"
+        android:text="Categories"
+        android:padding="12dp"
+        android:background="@color/transparent"
+        android:textColor="@android:color/black"/>
+
+    <Button
+        android:id="@+id/nav_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/shop"
+        android:text="My Cart"
+        android:padding="12dp"
+        android:background="@color/transparent"
+        android:textColor="@android:color/black"/>
+
+    <Button
+        android:id="@+id/nav_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/user"
+        android:text="My Profile"
+        android:padding="12dp"
+        android:background="@color/transparent"
+        android:textColor="@android:color/black"/>
+
+    <Button
+        android:id="@+id/nav_orders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/order"
+        android:text="My Orders"
+        android:padding="12dp"
+        android:background="@color/transparent"
+        android:textColor="@android:color/black"/>
+
+    <Button
+        android:id="@+id/nav_wallet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/wallet"
+        android:text="Wallet"
+        android:padding="12dp"
+        android:background="@color/transparent"
+        android:textColor="@android:color/black"/>
+
+    <Button
+        android:id="@+id/nav_promo_alerts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/bell"
+        android:text="Promo Alerts"
+        android:padding="12dp"
+        android:background="@color/transparent"
+        android:textColor="@android:color/black"/>
+
+    <Button
+        android:id="@+id/nav_saved_locations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/locationn"
+        android:text="Saved Locations"
+        android:padding="12dp"
+        android:background="@color/transparent"
+        android:textColor="@android:color/black"/>
+
+    <Button
+        android:id="@+id/nav_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/share"
+        android:text="Share"
+        android:padding="12dp"
+        android:background="@color/transparent"
+        android:textColor="@android:color/black"/>
+
+    <Button
+        android:id="@+id/nav_faqs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/information"
+        android:text="FAQs"
+        android:padding="12dp"
+        android:background="@color/transparent"
+        android:textColor="@android:color/black"/>
+
+    <Button
+        android:id="@+id/nav_help_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/help"
+        android:text="Help Center"
+        android:padding="12dp"
+        android:background="@color/transparent"
+        android:textColor="@android:color/black"/>
+
+    <Button
+        android:id="@+id/nav_wish_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/heart"
+        android:text="Wish List"
+        android:padding="12dp"
+        android:background="@color/transparent"
+        android:textColor="@android:color/black"/>
+
+    <Button
+        android:id="@+id/nav_sign_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/out"
+        android:text="Sign out"
+        android:textColor="@android:color/holo_red_light"
+        android:padding="12dp"
+        android:background="@color/transparent"/>
+</LinearLayout>
