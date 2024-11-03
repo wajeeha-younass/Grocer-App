@@ -38,9 +38,7 @@
         <activity
             android:name=".HomeActivity"
             android:exported="true" />
-        <activity
-            android:name=".BannerAdapter"
-            android:exported="true" />
+
         <activity
             android:name=".ProductAdapter"
             android:exported="true" />
@@ -55,6 +53,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".CartActivity"
+            android:exported="true" />
+
+        <activity android:name=".OrdersActivity"
+            android:exported="true" />
+
+        <activity android:name=".ProductDetailActivity"
+            android:exported="true" />
+        <activity android:name=".WalletActivity"
+            android:exported="true" />
+        <activity android:name=".FAQActivity"
+            android:exported="true" />
+        <activity android:name=".CheckoutActivity"
+            android:exported="true" />
+        <activity android:name=".AddtoCart"
+            android:exported="true" />
+
+
 
 
 

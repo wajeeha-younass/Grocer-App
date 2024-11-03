@@ -5,4 +5,8 @@
         <item>Urdu</item>
     </string-array>
     <string name="category_image_desc">Category Image</string>
+    <string name="sample_country">Your Country</string>
+    <string name="search_store">Search Store</string>
+    <string name="add">Add</string>
+    <string name="item_image_desc">Item Image Description</string>
 </resources>

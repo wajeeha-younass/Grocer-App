@@ -1,9 +1,8 @@
-package com.example.app
-
 data class Product(
-   val name: String,
-   val quantity: String,
-   val originalPrice: Int,
-   val discountedPrice: Int,
-   val discount: String
+    val name: String,
+    val quantity: String,
+    val discount: String,
+    val originalPrice: String,
+    val discountedPrice: String,
+    val imageResource: Int
 )

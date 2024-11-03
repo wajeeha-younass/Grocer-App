@@ -50,8 +50,8 @@
         android:title="Help Center"
         android:icon="@drawable/help" />
     <item
-        android:id="@+id/nav_wish_list"
-        android:title="Wish List"
+        android:id="@+id/nav_check_out"
+        android:title="Checkout"
         android:icon="@drawable/heart" />
 
     <item
